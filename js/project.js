@@ -164,7 +164,7 @@ let totalropa = rri + rcs + rzc + rcs2 + rjs + rvda + rvs + ras + rcda + rczi + 
 let Todito = totaltranspor + totalcomida + totalenergy + totalropa;
 let Todito2 = (Todito * 0.001)/1000;
 respuesta.innerHTML = "El resultado es: "; 
-dato.innerHTML = Todito2.toFixed(6) + " TON CO2";
+dato.innerHTML = Todito2.toFixed(6) + " TON CO2 ANUALES";
 
 
 if (!kilome || !semmm || !radios || !valorSeleccionado || !avionanua || !millas || !kwh || !klm || !kls || !klsl || !cr || !cd || !ma || !qe || !pes || !ci || !chn || !hue || !arr || !lv || !to || !vn || !esp || !pan || !ban || !ban || !pata || !ri || !cs || !zc || !cs2 || !js || !vda || !vs || !as || !cda || !czi || !zpd || !cda2 || !pdd || !zto || !pv) {
