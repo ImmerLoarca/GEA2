@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="iconooooooo">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontello-82947a8d/css/fontello.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway:wght@200&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+<body>
+    <header class="header" id="inicio">
+        <div class="hamburguer icon-search-2">
+        <nav class="menu-navegacion">
+            <a href="#transporte">Transporte</a>
+            <a href="#energia">Energia en el hogar</a>
+            <a href="#consumo">Consumo de alimentos</a>
+            <a href="#adquisicion">Adquisición de productos (ropa)</a>
+            <a href="#suma">Suma total</a>
+            <a href="#preguntas">Preguntas Finales</a>
+        </nav>
+        </div>
+        <div class="contenedor head">
+            <h1 class="titulo">¡Hola Bienvenido/a!</h1>
+            <h2 class="Subt">Nuestra página esta enfocada en mostrar cuantas toneladas una persona gasta a travez de sus actividades diarias.</h2>
+            <p class="copy"> "Cuidar el planeta tierra es la mejor huella que puedes dejar" -Viviana Bermudez </p>
+        </div>
+    </header>
+       
+    <main>
+        <section class="contenedor" id="transporte">
+            <h2 class="subtitulo">Transporte</h2>
+            
+            <div class="contenedor-servicio">
+
+                    
+       
+                    <div class="checklist-servicio">
+                        <div class="Important">
+                            <h3 class="n-idea"><span class="number">•</span>¿Qué medio de transporte utilizas en tu día a día?</h3>
+                        <form>
+                            <p>
+                                <input  type="radio" name="option" value="0.03" name="Autobús publico" id="Autobús publico" class="check">
+                                <label for="1">Autobús publico</label>
+                            </p>
+                            <p>
+                                <input  type="radio" name="option" value="0.3" name="Transporte priv" id="Transporte priv" class="check">
+                                <label for="2">Transporte privado (Uber o taxi)</label>
+                            </p>
+                            <p>
+                                <input  type="radio" name="option" value="0.18" name="CamionetaD" id="CamionetaD" class="check">
+                                <label for="3">Camioneta (Diesel)</label>
+                            </p>
+                            <p>
+                                <input  type="radio" name="option" value="0.14" name="camionetag" id="camionetag" class="check">
+                                <label for="4">Camioneta (Gasolina)</label>
+                            </p>
+                            <p>
+                                <input  type="radio" name="option" value="0.28" name="Auto" id="Auto" class="check">
+                                <label for="5">Automóvil Particular (Gasolina)</label>
+                            </p>
+                            <p>
+                                <input  type="radio" name="option" value="0.167" name="Moto" id="Moto" class="check">
+                                <label for="6">Motocicleta</label>
+                            </p>
+                            <p>
+                                <input  type="radio" name="option" value="0.01" name="pie" id="pie" class="check">
+                                <label for="7">Ninguno (A pie)</label>
+                            </p>
+                        </form> 
+                        </div>
+
+
+                        <div class="Important">
+                            <h3 class="n-idea"><span class="number">•</span>¿Qué distancia (en Kilómetros) recorres a diario en el medio de transporte elegido?</h3>
+                            <p>
+                                <input  type="number" value="  " name="Transporte priv" id="kilome" class="texto" onchange="transporte(this.value);">
+                                <label for="1.1">Kilómetros</label>
+                            </p>
+                        </div>
+
+                        
+                        <div class="Important">
+                            <h3 class="n-idea"><span class="number">•</span>¿Cuántas veces por semana?</h3>
+                            <p>
+                                <input  type="number" value="  " name="Transporte priv" id="semmm" class="texto" onchange="transporte(this.value);">
+                                <label for="1.2">Veces por semana</label>
+                            </p>
+                        </div>
+
+
+                        <div class="Important">
+                            <h3 class="n-idea"><span class="number">•</span>¿Con qué frecuencia (anual) viajas en avión?</h3>
+                            <p>
+                                <input  type="number" value="  " name="Transporte priv" id="avionanua" class="texto" onchange="transporte(this.value);">
+                                <label for="1.2">Veces al año</label>
+                            </p>
+                        </div>
+
+                        <div class="Important">
+                            <h3 class="n-idea"><span class="number">•</span>¿Qué distancia recorres en avión? Contando ida y vuelta</h3>
+                            <p>
+                                <input  type="number" value="  " name="Transporte priv" id="millas" class="texto" onchange="transporte(this.value);">
+                                <label for="1.2">Kilometros</label>
+                            </p>
+                        </div>
+
+
+            </div>
+        </section>
+
+        <section class="contenedor" id="energia">
+            <h2 class="subtitulo">Energia en el hogar</h2> 
+            <div class="contenedor-servicio">
+                <div class="checklist-servicio">
+                <div class="Important">
+                    <h3 class="n-idea"><span class="number">•</span>¿Cuál es tu promedio anual de consumo de energía eléctrica en kilowatts-hora (kWh)?</h3>
+                    <p>
+                        <input  type="number" value=" "  name="kilowa" id="kwh" class="texto">
+                        <label for="1.6">kWh</label>
+                    </p>
+                </div>
+
+                <div class="Important">
+                    <h3 class="n-idea"><span class="number">•</span>¿Cuántos kilogramos de gas propano (gas utilizado para cocinar) utilizas al mes? Se recomienda contar cuantos cilindros ocupa mensualmente y poder tener una cantidad adecuada.</h3>
+                    <p>
+                        <input  type="number" value="  " name="Transporte priv" id="klm" class="text">
+                        <label for="1.1"> kilogramos por mes </label>
+                    </p>
+                </div>
+
+                <div class="Important">
+                    <h3 class="n-idea"><span class="number">•</span>¿Cuántos kilogramos de leña utilizas semanalmente?</h3>
+                    <p>
+                        <input  type="number" value="  " name="Transporte priv" id="kls" class="texto">
+                        <label for="1.1">kilogramos por semana</label>
+                    </p>
+                </div>
+
+                <div class="Important">
+                    <h3 class="n-idea"><span class="number">•</span>¿Cuántos kilogramos de carbón vegetal utilizas semanalmente?</h3>
+                    <p>
+                        <input  type="number" value="  " name="Transporte priv" id="klsl" class="texto">
+                        <label for="1.1">kilogramos por semana</label>
+                    </p>
+                </div>
+                </div>            
+            </div>
+        </section>
+
+        <section class="contenedor" id="consumo">
+            <h2 class="subtitulo">Consumo de alimentos</h2>
+            <div class="contenedor-servicio">
+                <div class="Important">
+                    <h3 class="n-idea"><span class="number">•</span>De la siguiente lista de alimentos, coloque la cantidad en kilogramos que consume semanalmente.</h3>
+                    <p>
+                        <label for="2.1"  class="letraas">Carnes rojas</label>
+                        <input   type="number" value="  " name="Transporte priv" id="cr" class="texto3">
+                    </p>
+                    <p>
+                        <label for="2.1" class="letraas">Carnes de cordero</label>
+                        <input  type="number" value="  " name="Transporte priv" id="cd" class="texto3">
+                    </p>
+                    <p>
+                        <label for="2.1" class="letraas">Mariscos</label>
+                        <input  type="number" value="  " name="Transporte priv" id="ma" class="texto3">
+                    </p>
+                    <p>
+                        <label for="2.1" class="letraas">Queso</label>
+                        <input  type="number" value="  " name="Transporte priv" id="qe" class="texto3">
+                    </p>
+                    <p>
+                        <label for="2.1" class="letraas">Pescado</label>
+                        <input  type="number" value="  " name="Transporte priv" id="pes" class="texto3">
+                    </p>
+                    <p>
+                        <label for="2.1" class="letraas">Café instantáneo</label>
+                        <input  type="number" value="  " name="Transporte priv" id="ci" class="texto3">
+                    </p>
+                    <p>
+                        <label for="2.1" class="letraas">Chocolate negro</label>
+                        <input  type="number" value="  " name="Transporte priv" id="chn" class="texto3">
+                    </p>
+                    <p>
+                        <label for="2.1" class="letraas">Huevos</label>
+                        <input  type="number" value="  " name="Transporte priv" id="hue" class="texto3">
+                    </p>
+                    <p>
+                        <label for="2.1" class="letraas">Arroz</label>
+                        <input  type="number" value="  " name="Transporte priv" id="arr" class="texto3">
+                    </p>
+                    <p>
+                        <label for="2.1" class="letraas">Lecha de vaca</label>
+                        <input  type="number" value="  " name="Transporte priv" id="lv" class="texto3">
+                    </p>
+                    <p>
+                        <label for="2.1" class="letraas">Tomate</label>
+                        <input  type="number" value="  " name="Transporte priv" id="to" class="texto3">
+                    </p>
+                    <p>
+                        <label for="2.1" class="letraas">Vino </label>
+                        <input  type="number" value="  " name="Transporte priv" id="vn" class="texto3">
+                    </p>
+                    <p>
+                        <label for="2.1" class="letraas">Espagueti </label>
+                        <input  type="number" value="  " name="Transporte priv" id="esp" class="texto3">
+                    </p>
+                    <p>
+                        <label for="2.1" class="letraas">Pan </label>
+                        <input  type="number" value="  " name="Transporte priv" id="pan" class="texto3">
+                    </p>
+                    <p>
+                        <label for="2.1" class="letraas">Banana </label>
+                        <input  type="number" value="  " name="Transporte priv" id="ban" class="texto3">
+                    </p>
+                    <p>
+                        <label for="2.1" class="letraas">Patatas </label>
+                        <input  type="number" value="  " name="Transporte priv" id="pata" class="texto3">
+                    </p>
+                </div>
+                    
+                     
+            </div>
+        </section>
+
+            <section class="contenedor" id="adquisicion">
+                <h2 class="subtitulo">Adquisición de productos (ropa)</h2>
+                <div class="contenedor-servicio">
+                        <div class="checklist-servicio">
+                            <h3 class="n-idea"><span class="number">•</span>Según el tipo de prenda, coloque la cantidad de producto que suele comprar mensualmente:</h3>
+                            <p>
+                                <label for="2.1" class="letraas">Ropa interior</label>
+                                <input  type="number" value="  " name="ri" id="ri" class="texto3">
+                            </p>
+                            <p>
+                                <label for="2.1" class="letraas">Camiseta sintética</label>
+                                <input  type="number" value="  " name="Transporte priv" id="cs" class="texto3">
+                            </p>
+                            <p>
+                                <label for="2.1" class="letraas">Zapatos de cuero</label>
+                                <input  type="number" value="  " name="Transporte priv" id="zc" class="texto3">
+                            </p>
+                            <p>
+                                <label for="2.1" class="letraas">Camisa sintética</label>
+                                <input  type="number" value="  " name="Transporte priv" id="cs2" class="texto3">
+                            </p>
+                            <p>
+                                <label for="2.1" class="letraas">Jersey sintético</label>
+                                <input  type="number" value="  " name="Transporte priv" id="js" class="texto3">
+                            </p>
+                            <p>
+                                <label for="2.1" class="letraas">Vestido de algodón</label>
+                                <input  type="number" value="  " name="Transporte priv" id="vda" class="texto3">
+                            </p>
+                            <p>
+                                <label for="2.1" class="letraas">Vestido sintético</label>
+                                <input  type="number" value="  " name="Transporte priv" id="vs" class="texto3">
+                            </p>
+                            <p>
+                                <label for="2.1" class="letraas">Abrigo sintético</label>
+                                <input  type="number" value="  " name="Transporte priv" id="as" class="texto3">
+                            </p>
+                            <p>
+                                <label for="2.1" class="letraas">Camiseta de algodón</label>
+                                <input  type="number" value="  " name="Transporte priv" id="cda" class="texto3">
+                            </p>
+                            <p>
+                                <label for="2.1" class="letraas">Calzado industrial</label>
+                                <input  type="number" value="  " name="Transporte priv" id="czi" class="texto3">
+                            </p>
+                            <p>
+                                <label for="2.1" class="letraas">Zapatillas deportivas</label>
+                                <input  type="number" value="  " name="Transporte priv" id="zpd" class="texto3">
+                            </p>
+                            <p>
+                                <label for="2.1" class="letraas">Camisa de algodón</label>
+                                <input  type="number" value="  " name="Transporte priv" id="cda2" class="texto3">
+                            </p>
+                            <p>
+                                <label for="2.1" class="letraas">Pantalon de deporte</label>
+                                <input  type="number" value="  " name="Transporte priv" id="pdd" class="texto3">
+                            </p>
+                            <p>
+                                <label for="2.1" class="letraas">Zapatos de tela/otros</label>
+                                <input  type="number" value="  " name="Transporte priv" id="zto" class="texto3">
+                            </p>
+                            <p>
+                                <label for="2.1" class="letraas">Pantalones Vaqueros</label>
+                                <input  type="number" value="  " name="Transporte priv" id="pv" class="texto3">
+                            </p>
+    
+                        </div>
+                        
+                </div>
+            </section>
+
+            <section class="contenedor" id="suma">
+                <h2 class="subtitulo">Suma de todos los elementos</h2>
+                <div class="contenedor-servicio">
+                    
+                        <div class="checklist-servicio">
+                            <button id="bouton" class="bouton"> Resultado </button>
+                            <div id="respuesta" class="respuesta"></div>
+                            <div id="dato" class="dato"></div>   
+                        </div>
+
+                        <div class="checklist-servicio">
+                            <button onclick="limpiarInputs()" class="bouton"> limpiar </button>  
+                        </div>
+
+                        
+
+                </div>
+            </section>
+
+            <section class="contenedor" id="preguntas">
+                <h2 class="subtitulo" >Preguntas finales</h2>
+                <div class="contenedor-servicio">
+                    <div class="checklist-servicio">
+                    <div class="Important">
+                    <h3 class="n-idea"><span class="number">•</span>¿Has participado en el programa de reforestación o limpieza del medio ambiente?</h3>
+                    <input  type="radio" name="option2" id="Auto" class="check">
+                    <label for="5">Si</label>
+                    <input  type="radio" name="option2" id="Auto" class="check">
+                    <label for="5">No</label>
+                    <br>
+                    <br>
+                    <h3 class="n-idea"><span class="number">•</span>¿Practicas algún método de desecho de residuos?</h3>
+                    <input  type="radio" name="option2" id="Auto" class="check">
+                    <label for="5">Si</label>
+                    <input  type="radio" name="option2" id="Auto" class="check">
+                    <label for="5">No</label>  
+                </div>
+            </div>
+        </div>
+            </section>
+
+
+
+        
+
+    </main>
+
+    <footer id="contacto">
+        <div class="contenedor foooter-content">
+            <div class="contact-us">
+                <h2 data-text="¡Gracias por sú participación!" class="Nombre">¡Gracias por sú participación!</h2>
+                <p>Página hecha por: <b>Robin Meza, Pablo Santos, Walter Ascencio, Carlos Castillo, Immer Loarca</b></p>
+            </div>
+            <div class="social-media">
+            </div> 
+        </div>
+        <div class="line"></div> 
+    </footer>
+<script src="js/lightbox.js"> </script>
+<script src="js/project.js"> </script>
+</body>
+</html>
