@@ -172,6 +172,27 @@ if (!kilome || !semmm || !radios || !valorSeleccionado || !avionanua || !millas 
     event.preventDefault();
 }
 
+if(Todito2 >= 2.0) {
+
+    var Recomen = document.getElementById("Recomendaciones"); 
+
+    function recomendacions(){
+        Recomen.style.display = "block";
+    }
+    
+    bouton.addEventListener("click", recomendacions);
+    
+    
+} else {
+    var Recomen2 = document.getElementById("Recomendaciones2"); 
+
+    function recomendacions2(){
+        Recomen2.style.display = "block";
+    }
+    
+    bouton.addEventListener("click", recomendacions2);
+}
+
 }
 
 function limpiarInputs() {
