@@ -33,6 +33,51 @@
     transition: all .3s ease-in-out;
     background: transparent!important;
 }
+/*new*/
+.Recomendaciones{
+    display: none;
+}
+
+.Recomendaciones{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden; 
+    margin: auto; 
+    padding: 60px 0;
+  }
+
+.Recomendaciones P {
+    text-align: left;
+    font-weight: 70;
+    font-weight: bold;
+    color: #316B83;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+.Recomendaciones2{
+    display: none;
+}
+
+.Recomendaciones2{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden; 
+    margin: auto; 
+    padding: 60px 0;
+  }
+
+.Recomendaciones2 P {
+    text-align: left;
+    font-weight: 70;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Oxygen', sans-serif;
+}
 
 
 .bouton:hover{
