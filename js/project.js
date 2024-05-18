@@ -167,7 +167,7 @@ respuesta.innerHTML = "El resultado es: ";
 dato.innerHTML = Todito2.toFixed(6) + " TON CO2 ANUALES";
 
 
-if (!kilome || !semmm || !radios || !valorSeleccionado || !avionanua || !millas || !kwh || !klm || !kls || !klsl || !cr || !cd || !ma || !qe || !pes || !ci || !chn || !hue || !arr || !lv || !to || !vn || !esp || !pan || !ban || !ban || !pata || !ri || !cs || !zc || !cs2 || !js || !vda || !vs || !as || !cda || !czi || !zpd || !cda2 || !pdd || !zto || !pv) {
+if (!kilome && kilome < 0 || !semmm && semmm < 0 || !radios && radios<0 || !valorSeleccionado && valorSeleccionado<0 || !avionanua && avionanua < 0 || !millas && millas < 0 || !kwh && kwh < 0 || !klm && klm<0 || !kls && kls < 0 || !klsl && klsl < 0 || !cr && cr < 0 || !cd && cd < 0 || !ma && ma < 0 || !qe && qe < 0 || !pes && pes < 0 || !ci && ci < 0 || !chn && chn < 0 || !hue && hue < 0 || !arr && arr < 0 || !lv && lv < 0 || !to && to < 0 || !vn && vn < 0 || !esp && esp < 0 || !pan && pan < 0 || !ban && ban < 0  || !pata && pata < 0 || !ri && ri < 0 || !cs && cs < 0 || !zc && zc < 0 || !cs2 && cs2 < 0 || !js && js < 0 || !vda && vda < 0 || !vs && vs < 0 || !as && as < 0 || !cda && cda < 0 || !czi && czi < 0 || !zpd && zpd < 0 || !cda2 && cda2 < 0 || !pdd && pdd < 0 || !zto && zto < 0 || !pv && pv<0) {
     alert("Por favor, complete todos los campos.");
     event.preventDefault();
 }
